@@ -4,7 +4,7 @@ import ProgressBar from '../primitives/ProgressBar';
 
 const ReportCard = React.memo(() => {
   return (
-    <div className="bg-[#E6F4FB] rounded-2xl p-8 relative overflow-hidden h-full flex flex-col md:flex-row gap-6">
+    <div className="bg-[#E6F4FB] rounded-2xl p-8 relative  h-full flex flex-col md:flex-row gap-6">
       <div className="flex-1 z-10">
         <h2 className="text-2xl font-bold text-[#002D42] mb-4 leading-tight max-w-xs">
           We automatically generate reports for each of your customers
@@ -29,18 +29,18 @@ const ReportCard = React.memo(() => {
           <StatRow label="Active last 7 days" value="True" />
         </div>
 
-        {/* Company Activation Card */}
-        <div className="absolute top-6 left-52 bg-white rounded-xl shadow-xl p-5 w-64 border border-gray-50">
-          <h3 className="text-sm font-semibold text-gray-700 mb-1">Company activation</h3>
-          <div className="text-3xl font-bold text-gray-900 mb-4">40%</div>
-          <div className="space-y-1">
-             <ProgressBar label="Signed up" percentage={100} />
-             <ProgressBar label="Setup" percentage={80} />
-             <ProgressBar label="Aha moment" percentage={60} />
-             <ProgressBar label="Activated" percentage={40} />
-             <ProgressBar label="Active" percentage={80} />
-          </div>
+       {/* Company Activation Card */}
+      <div className="absolute -bottom-16 right-4 z-50 bg-white rounded-xl shadow-2xl p-5 w-64 border border-gray-50">
+        <h3 className="text-sm font-semibold text-gray-700 mb-1">Company activation</h3>
+        <div className="text-3xl font-bold text-gray-900 mb-4">40%</div>
+        <div className="space-y-1">
+           <ProgressBar label="Signed up" percentage={100} />
+           <ProgressBar label="Setup" percentage={80} />
+           <ProgressBar label="Aha moment" percentage={60} />
+           <ProgressBar label="Activated" percentage={40} />
+           <ProgressBar label="Active" percentage={80} />
         </div>
+      </div>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import EnrichField from '../primitives/EnrichField';
 
 const EnrichmentCard = React.memo(() => {
   return (
-    <div className="bg-[#FFF0DF] rounded-2xl p-8 h-full relative">
+    <div className="bg-[#FFF0DF] rounded-2xl p-9 h-full relative mt-6">
       <h2 className="text-xl font-bold text-amber-900 mb-2">Automatic enrichment</h2>
       <p className="text-amber-800 text-sm mb-6 max-w-sm">
         Automatically enrich your customers profiles and their users powered by GPT
